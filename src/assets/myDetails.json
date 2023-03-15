@@ -1,0 +1,30 @@
+{
+    "educationDetials": [
+        {
+            "standard": "High School",
+            "details": "I have completed my high scholl from BDSVM school with 91% of marks obtioned.",
+            "imgSrc": "/assets/education-icon.png"
+        },
+        {
+            "standard": "Intermediate",
+            "details": " completed with 91%.",
+            "imgSrc": "/assets/education-icon.png"
+        },{},
+        {}
+    ],
+    "experienceDetails": [
+        {
+            "compName": "Infosys..........",
+            "details": "I started working at infosys in jan 2021",
+            "imgSrc": "/assets/briefcase.png"
+        },
+        {
+            "compName": "Infosys..........",
+            "details": "I started working at infosys in jan 2021",
+            "imgSrc": "/assets/briefcase.png"
+        }
+    ],
+    "contactDetails":[{
+        "email":"piyushgangwar1997@gmail.com"
+    }]
+}

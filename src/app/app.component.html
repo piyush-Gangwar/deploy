@@ -1,0 +1,64 @@
+
+    <div id="container">
+        <div id="container-name">
+            <h1>{{title}}</h1>
+        </div>
+        <div id="container-pic">
+            <img src="/assets/piyushPic.jpg" id="image" alt="piyush" width="40%" height="95%">
+        </div>
+    </div>
+    <div>
+        <h3><strong>Education Detail......</strong></h3>
+    </div>
+    <div class="workExp">
+        <div *ngFor="let element of educationDetialss" class="flatcard">
+            <h5><strong>{{element.standard}} &nbsp;<img src="{{element.imgSrc}}" id="eduDetails" width="2%" alt=""
+                        height="2%"></strong>
+            </h5>
+            <span>{{element.details}}</span>
+    </div></div>
+    <div>
+        <h3><strong>Work Experience &nbsp;<img src="/assets/briefcase.png" id="contactDetails" width="2%" alt=""
+                    height="2%"></strong></h3>
+    </div>
+    <div class="workExp">
+        <div *ngFor="let element of experienceDetailss" class="card">
+            <div><b>{{element.compName}}</b>&nbsp;&nbsp;<img src="{{element.imgSrc}}" alt="" width="15%" height="40%">
+            </div>
+            <div>{{element.details}}</div>
+        </div>
+
+    </div>
+    <div>
+        <div>
+            <h3><strong>ContactDetails &nbsp;<img src="/assets/icons8-mobile-phone-48.png" id="contactDetails" alt=""
+                        width="2%" height="4%"></strong></h3>
+        </div>
+        <p>{{email}}</p>
+    </div>
+
+    <!-- // This code is for acheving mail direct from html -->
+    <br>
+    <div><span>
+            <h1><strong>Email me....</strong></h1>
+        </span></div>
+    <div id="formdiv">
+        <form id="form" action="https://formspree.io/f/mayzbbvj" method="POST">
+            <label id="email">
+                <strong>Your email:</strong>
+            </label>
+            <input type="email" name="email" style="margin-left: 10px;margin-bottom: 10px;">
+
+            <label id="message">
+                <strong>Your message:</strong>
+            </label>
+            <textarea name="message" style="height: 50px;margin-left: 10px;"></textarea>
+
+
+            <button type="submit" style="margin-left: 10px;margin-bottom: 10px;">Send</button>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <router-outlet></router-outlet>

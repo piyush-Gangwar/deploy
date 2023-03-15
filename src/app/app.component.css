@@ -1,0 +1,150 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: fit-content;
+    background-color: black;
+    margin: -8px;
+    height: 100px;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: black;
+    margin: -8px;
+    /* height: 100px; */
+}
+
+#container-name {
+    flex: 70%;
+    color: aliceblue;
+}
+
+#container-pic {
+    flex: 30%;
+}
+
+#image {
+    border-radius: 50%;
+    background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    #contactDetails{
+        height: 5%;
+        width: 5%;
+    }
+    #eduDetails{
+        height: 50%;
+        width: 8%;
+    }
+    #image{
+        height: 100%;
+        width: 70%;
+    }
+}
+#image {
+    animation: shake 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    /* TODO: this % means % completion of animation. */
+    /* this is used to tranform animation in transactional and rotation */
+    /* 0% { transform: translate(px, 0px) rotate(60deg); }*/
+
+    /* this is used to tranform animation in rotationl */
+
+    /* 10% {  rotate: 36deg}
+    20% {  rotate: 72deg}
+
+
+    */
+    /* this is used to tranform animation in transactional */
+    /* 10% {  translate: (-1px, 0px)}
+    20% {  translate:-2, 0px}
+    30% {  translate:-3px, 0px}
+    40% {  translate:-4px, 0px} */
+    40% {
+        transform: translate(0px, 400px) rotate(360deg)
+    }
+
+    /* 60% {  translate:-4px, 0px}
+    70% {  translate:-3px, 0px}*/
+    /* 80% {  transform: translate(0px, 30px)}  */
+    /* 90% {  translate:-1px, 0px}
+    100% {  translate:0px, 0px}
+    0% {  translate:0px, 0px} */
+
+
+}
+
+/* #contactDetails{
+    animation: phoneshake .5s;
+    animation-iteration-count: 10;
+} */
+#contactDetails:hover{
+    animation: phoneshake .5s;
+    animation-iteration-count: 10;
+    transition: all 0.5s ease-in-out;
+    transform: scale(2);
+}
+@keyframes phoneshake {
+    40% {
+       rotate: 30deg;
+    }
+    80% {
+        rotate: -30deg;
+     }
+
+}
+#form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#email{
+flex: 100%;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-top: 10px;
+}
+#message{
+    flex: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#formdiv{
+    background-color: grey;
+    display: flex;
+    height: 200px;
+    /* width: 100px; */
+    /* margin-left: -2px; */
+}
+.workExp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    max-height: 200px;
+    max-width: 200 px;
+}
+
+::-webkit-scrollbar{
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: grey;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    border-radius: 2rem;
+    border: 0.2rem solid transparent;
+    background-clip: content-box;
+    
+}
